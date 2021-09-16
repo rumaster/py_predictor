@@ -15,9 +15,9 @@ def random_predict(number: int = 1) -> int:
         int: Число попыток
     """
     count = 0
-
     num_from = 1
     num_to = 100
+
     while True:
         count += 1
         predict_number = (num_to - num_from)//2 + num_from  # предполагаемое число
