@@ -20,7 +20,7 @@ def random_predict(number: int = 1) -> int:
     num_to = 100
     while True:
         count += 1
-        predict_number = (num_to - num_from) // 2 + num_from  # предполагаемое число
+        predict_number = (num_to - num_from)//2 + num_from  # предполагаемое число
         if number == predict_number:
             break  # выход из цикла если угадали
         if number > predict_number: num_from = predict_number + 1
